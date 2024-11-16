@@ -13,6 +13,13 @@
   <a href="https://your_gradio_demo_link" target="_blank">
     <img src="https://img.shields.io/badge/Gradio-Demo-orange" alt="Gradio">
   </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://huggingface.co/bpiyush/sound-of-water-models" target="_blank">
+    <img src="https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-md-dark.svg" alt="Huggingface">
+  </a>
+  <a href="https://huggingface.co/datasets/bpiyush/sound-of-water" target="_blank">
+    <img src="https://huggingface.co/datasets/huggingface/badges/resolve/main/dataset-on-hf-md-dark.svg" alt="Huggingface">
+  </a>
 </p>
 
 <!-- Add a teaser image. -->
