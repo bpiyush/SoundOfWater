@@ -104,7 +104,7 @@ We provide trained models for pitch estimation.
 </tr>
 </table>
 
-The models are available to download [here](TODO).
+The models are available to download [here](https://huggingface.co/bpiyush/sound-of-water-models).
 
 
 **Option 1:** Download from `huggingface`. Use this snippet to download the models:
