@@ -15,24 +15,39 @@
   </a>
 </p>
 
+<!-- Add a teaser image. -->
+<p align="center">
+  <img src="./media_assets/pitch_on_spectrogram-compressed.gif" alt="Teaser" width="100%">
+</p>
+
+*Our key observations*: As water is poured, the fundamental frequency that we hear changes predictably over time as a function of physical properties (e.g., container dimensions).
+
 
 **TL;DR**: We present a method to infer physical properties of liquids from *just* the sound of pouring. We show in theory how *pitch* can be used to derive various physical properties such as container height, flow rate, etc. Then, we train a pitch detection network (`wav2vec2`) using simulated and real data. The resulting model can predict the physical properties of pouring liquids with high accuracy. The latent representations learned also encode information about liquid mass and container shape.
 
-
-<!-- Add a teaser image. -->
-<p align="center">
-  <img src="./media_assets/teaser.png" alt="Teaser" width="100%">
-</p>
 
 ## 📅 Updates
 
 ## Table of Contents
 
+- [  The Sound of Water: Inferring Physical Properties from Pouring Liquids](#--the-sound-of-water-inferring-physical-properties-from-pouring-liquids)
+  - [📅 Updates](#-updates)
+  - [Table of Contents](#table-of-contents)
+  - [Highlights](#highlights)
+  - [Dataset](#dataset)
+  - [Playground](#playground)
+  - [Results](#results)
+  - [Citation](#citation)
+  - [Acknowledgements](#acknowledgements)
+
 
 ## Highlights
 
-This should give the key highlight results.
-
+1. We train a `wav2vec2` model to estimate the pitch of pouring water. We use supervision from simulated data and fine-tune on real data using visual co-supervision.
+2. We show physical property estimation from pitch. For example, in estimating the height of the container, we achieve a mean absolute error of 2.2 cm, in radius estimation, 1.6 cm and in estimating length of air column, 0.6 cm.
+3. We show strong generalisation to other datasets (e.g., [Wilson et al.](https://gamma.cs.unc.edu/PSNN/)) and some videos from YouTube.
+4. We also show that the learned representations can be regressed to estimate the mass of the liquid and the shape of the container.
+5. We release a clean dataset of 805 videos of water pouring with annotations for physical properties.
 
 ## Dataset
 
