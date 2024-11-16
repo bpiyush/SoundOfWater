@@ -1,0 +1,1 @@
+In this folder, we will store the code to train and evaluate models for pitch detection from audio.
