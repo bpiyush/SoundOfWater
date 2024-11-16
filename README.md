@@ -56,7 +56,28 @@ We collect a dataset of 805 clean videos that show the action of pouring water i
 
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/463c4e65-0c3b-4625-bd5c-5839e3adb2bb">
 
-TODO: The dataset is available to download [here](.).
+The dataset is available to download [here]([.](https://huggingface.co/datasets/bpiyush/sound-of-water)).
+
+**Option 1:** Download from `huggingface` 
+
+```py
+# Note: this shall take 5-10 mins.
+
+# Optionally, disable progress bars
+# os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = True
+
+from huggingface_hub import snapshot_download
+snapshot_download(
+    repo_id="bpiyush/sound-of-water",
+    repo_type="dataset",
+    local_dir="/path/to/dataset/SoundOfWater",
+)
+```
+The total size of the dataset is 1.4 GB.
+
+**Option 2:** Download from VGG servers
+
+Coming soon!
 
 
 ## 🤖 Models
