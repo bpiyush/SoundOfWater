@@ -20,7 +20,7 @@
   <img src="./media_assets/pitch_on_spectrogram-compressed.gif" alt="Teaser" width="100%">
 </p>
 
-*Our key observations*: As water is poured, the fundamental frequency that we hear changes predictably over time as a function of physical properties (e.g., container dimensions).
+*Key insight*: As water is poured, the fundamental frequency that we hear changes predictably over time as a function of physical properties (e.g., container dimensions).
 
 
 **TL;DR**: We present a method to infer physical properties of liquids from *just* the sound of pouring. We show in theory how *pitch* can be used to derive various physical properties such as container height, flow rate, etc. Then, we train a pitch detection network (`wav2vec2`) using simulated and real data. The resulting model can predict the physical properties of pouring liquids with high accuracy. The latent representations learned also encode information about liquid mass and container shape.
@@ -54,7 +54,9 @@
 
 We collect a dataset of 805 clean videos that show the action of pouring water in a container. Our dataset spans over 50 unique containers made of 5 different materials, 4 different shapes and with hot and cold water. Some example containers are shown below.
 
-<img width="650" alt="image" src="https://github.com/user-attachments/assets/463c4e65-0c3b-4625-bd5c-5839e3adb2bb">
+<p align="center">
+  <img width="650" alt="image" src="./media_assets/containers-v2.png">
+</p>
 
 TODO: The dataset is available to download [here](.).
 
@@ -125,11 +127,13 @@ Remember to download the model in the previous step. Then, run the notebook.
 
 We show key results in this section. Please refer to the paper for more details.
 
+<p align="center">
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/34b0ea66-5ee7-4338-bf04-f0b20f87d0de">
 
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/7193001b-1485-42b5-aa25-feab777e9921">
 
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/9cf2a960-af8b-4df3-b714-6755b5bb90f6">
+</p>
 
 
 <!-- Add a citation -->
