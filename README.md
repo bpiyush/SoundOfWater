@@ -104,7 +104,24 @@ We provide trained models for pitch estimation.
 </tr>
 </table>
 
-TODO: The models are available to download [here](.).
+The models are available to download [here](TODO).
+
+
+**Option 1:** Download from `huggingface`. Use this snippet to download the models:
+
+```python
+from huggingface_hub import snapshot_download
+
+snapshot_download(
+    repo_id="bpiyush/sound-of-water-models",
+    local_dir="/path/to/download/",
+)
+```
+
+**Option 2:** Download from VGG servers
+
+Coming soon!
+
 
 ## 🎮 Playground
 
