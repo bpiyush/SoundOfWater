@@ -28,21 +28,21 @@
 
 ## 📅 Updates
 
-## Table of Contents
+## 📑 Table of Contents
 
 - [  The Sound of Water: Inferring Physical Properties from Pouring Liquids](#--the-sound-of-water-inferring-physical-properties-from-pouring-liquids)
   - [📅 Updates](#-updates)
-  - [Table of Contents](#table-of-contents)
-  - [Highlights](#highlights)
-  - [Dataset](#dataset)
-  - [Models](#models)
-  - [Playground](#playground)
-  - [Results](#results)
-  - [Citation](#citation)
-  - [Acknowledgements](#acknowledgements)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [✨ Highlights](#-highlights)
+  - [📂 Dataset](#-dataset)
+  - [🤖 Models](#-models)
+  - [🎮 Playground](#-playground)
+  - [📊 Results](#-results)
+  - [📜 Citation](#-citation)
+  - [🙏 Acknowledgements](#-acknowledgements)
 
 
-## Highlights
+## ✨ Highlights
 
 1. We train a `wav2vec2` model to estimate the pitch of pouring water. We use supervision from simulated data and fine-tune on real data using visual co-supervision.
 2. We show physical property estimation from pitch. For example, in estimating the height of the container, we achieve a mean absolute error of 2.2 cm, in radius estimation, 1.6 cm and in estimating length of air column, 0.6 cm.
@@ -50,7 +50,7 @@
 4. We also show that the learned representations can be regressed to estimate the mass of the liquid and the shape of the container.
 5. We release a clean dataset of 805 videos of water pouring with annotations for physical properties.
 
-## Dataset
+## 📂 Dataset
 
 We collect a dataset of 805 clean videos that show the action of pouring water in a container. Our dataset spans over 50 unique containers made of 5 different materials, 4 different shapes and with hot and cold water. Some example containers are shown below.
 
@@ -59,7 +59,7 @@ We collect a dataset of 805 clean videos that show the action of pouring water i
 TODO: The dataset is available to download [here](.).
 
 
-## Models
+## 🤖 Models
 
 We provide trained models for pitch estimation.
 
@@ -88,7 +88,7 @@ We provide trained models for pitch estimation.
 
 TODO: The models are available to download [here](.).
 
-## Playground
+## 🎮 Playground
 
 We provide a single [notebook](./playground.ipynb) to run the model and visualise results.
 We walk you through the following steps:
@@ -106,7 +106,6 @@ conda activate sow
 # Install desired torch version
 # NOTE: change the version if you are using a different CUDA version
 pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
-pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
 
 # Additional packages
 pip install lightning==2.1.2
@@ -122,7 +121,7 @@ pip install ipywidgets jupyterlab seaborn
 
 Remember to download the model in the previous step. Then, run the notebook.
 
-## Results
+## 📊 Results
 
 We show key results in this section. Please refer to the paper for more details.
 
@@ -134,7 +133,7 @@ We show key results in this section. Please refer to the paper for more details.
 
 
 <!-- Add a citation -->
-## Citation
+## 📜 Citation
 
 If you find this repository useful, please consider giving a star ⭐ and citation
 
@@ -147,9 +146,8 @@ If you find this repository useful, please consider giving a star ⭐ and citati
 }
 ```
 
-
 <!-- Add acknowledgements, license, etc. here. -->
-## Acknowledgements
+## 🙏 Acknowledgements
 
 * We thank Ashish Thandavan for support with infrastructure and Sindhu
 Hegde, Ragav Sachdeva, Jaesung Huh, Vladimir Iashin, Prajwal KR, and Aditya Singh for useful
