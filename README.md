@@ -85,11 +85,6 @@ Coming soon!
 We provide trained models for pitch estimation.
 
 <table style="font-size: 12px;">
-<style>
-    table td:nth-child(n+2), table th:nth-child(n+2) {
-      text-align: center;
-    }
-</style>
 <tr>
   <th>File link</th>
   <th>Description</th>
