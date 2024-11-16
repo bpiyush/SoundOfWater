@@ -57,5 +57,10 @@ def print_update(update, fillchar=":", color="yellow", pos="center"):
     print(colored(update, color))
 
 
+def json_print(data, indent=4):
+    import json
+    print(json.dumps(data, indent=indent))
+
+
 if __name__ == "__main__":
     print("Repo path:", repo_path)
