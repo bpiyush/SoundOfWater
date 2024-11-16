@@ -35,6 +35,7 @@
   - [Table of Contents](#table-of-contents)
   - [Highlights](#highlights)
   - [Dataset](#dataset)
+  - [Models](#models)
   - [Playground](#playground)
   - [Results](#results)
   - [Citation](#citation)
@@ -55,17 +56,71 @@ We collect a dataset of 805 clean videos that show the action of pouring water i
 
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/463c4e65-0c3b-4625-bd5c-5839e3adb2bb">
 
-The dataset is available to download [here](.).
+TODO: The dataset is available to download [here](.).
 
+
+## Models
+
+We provide trained models for pitch estimation.
+
+<table style="font-size: 12px;">
+<style>
+    table td:nth-child(n+2), table th:nth-child(n+2) {
+      text-align: center;
+    }
+</style>
+<tr>
+  <th>File link</th>
+  <th>Description</th>
+  <th>Size</th>
+</tr>
+<tr>
+  <td> <a href="url">synthetic_pretrained.pth</a> </td>
+  <td>Pre-trained on synthetic data &nbsp;&nbsp;&nbsp;</td>
+  <td>361M</td>
+</tr>
+<tr>
+  <td> <a href="url">real_finetuned_visual_cosupervision.pth</a> </td>
+  <td>Trained with visual co-supervision &nbsp;&nbsp;&nbsp;</td>
+  <td>361M</td>
+</tr>
+</table>
+
+TODO: The models are available to download [here](.).
 
 ## Playground
 
 We provide a single [notebook](./playground.ipynb) to run the model and visualise results.
-This needs to be the inference pipeline notebook.
+We walk you through the following steps:
+- Load data
+- Demo the physics behind pouring water
+- Load and run the model
+- Visualise the results
 
-This should start with instructions for installation.
-Then, it should include a brief description of the notebook and how to use it.
-Finally, it should include a link to the notebook.
+Before running the notebook, be sure to install the required dependencies:
+
+```bash
+conda create -n sow python=3.8
+conda activate sow
+
+# Install desired torch version
+# NOTE: change the version if you are using a different CUDA version
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+
+# Additional packages
+pip install lightning==2.1.2
+pip install timm==0.9.10
+pip install pandas
+pip install decord==0.6.0
+pip install librosa==0.10.1
+pip install einops==0.7.0
+pip install ipywidgets jupyterlab seaborn
+
+# if you find a package is missing, please install it with pip
+```
+
+Remember to download the model in the previous step. Then, run the notebook.
 
 ## Results
 
@@ -96,10 +151,14 @@ If you find this repository useful, please consider giving a star ⭐ and citati
 <!-- Add acknowledgements, license, etc. here. -->
 ## Acknowledgements
 
-We want to thank ....
+* We thank Ashish Thandavan for support with infrastructure and Sindhu
+Hegde, Ragav Sachdeva, Jaesung Huh, Vladimir Iashin, Prajwal KR, and Aditya Singh for useful
+discussions.
+* This research is funded by EPSRC Programme Grant VisualAI EP/T028572/1, and a Royal Society Research Professorship RP / R1 / 191132.
 
 We also want to highlight closely related work that could be of interest:
 
-* Paper 1
-* Paper 2
-* ...
+* [Analyzing Liquid Pouring Sequences via Audio-Visual Neural Networks](https://gamma.cs.unc.edu/PSNN/). IROS (2019).
+* [Human sensitivity to acoustic information from vessel filling](https://psycnet.apa.org/record/2000-13210-019). Journal of Experimental Psychology (2020).
+* [See the Glass Half Full: Reasoning About Liquid Containers, Their Volume and Content](https://arxiv.org/abs/1701.02718). ICCV (2017).
+* [CREPE: A Convolutional Representation for Pitch Estimation](https://arxiv.org/abs/1802.06182). ICASSP (2018).
