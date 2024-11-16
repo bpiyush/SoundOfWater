@@ -6,8 +6,8 @@
     <img src="https://img.shields.io/badge/arXiv-Paper-red" alt="arXiv">
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://colab.research.google.com/your_notebook_link" target="_blank">
-    <img src="https://img.shields.io/badge/Colab-Demo-brightgreen" alt="Colab">
+  <a target="_blank" href="https://colab.research.google.com/github/bpiyush/SoundOfWater/blob/main/playground.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://your_gradio_demo_link" target="_blank">
@@ -55,7 +55,7 @@ This should include visualisation and description of the dataset. This should al
 
 ## Playground
 
-We provide a single notebook to run the model and visualise results.
+We provide a single [notebook](./playground.ipynb) to run the model and visualise results.
 This needs to be the inference pipeline notebook.
 
 This should start with instructions for installation.
