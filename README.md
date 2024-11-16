@@ -57,12 +57,11 @@ This should include quantitative and some qualitative results to show what the m
 If you find this repository useful, please consider giving a star ⭐ and citation
 
 ```bibtex
-# TODO: Update the citation
-@article{your_paper,
+@article{sound_of_water_bagad,
   title={The Sound of Water: Inferring Physical Properties from Pouring Liquids},
-  author={Your Name},
+  author={Bagad, Piyush and Tapaswi, Makarand and Snoek, Cees G. M. and Zisserman, Andrew},
   journal={arXiv},
-  year={2021}
+  year={2024}
 }
 ```
 
