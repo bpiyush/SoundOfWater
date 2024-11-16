@@ -51,7 +51,12 @@
 
 ## Dataset
 
-This should include visualisation and description of the dataset. This should also include instructions to download the dataset.
+We collect a dataset of 805 clean videos that show the action of pouring water in a container. Our dataset spans over 50 unique containers made of 5 different materials, 4 different shapes and with hot and cold water. Some example containers are shown below.
+
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/463c4e65-0c3b-4625-bd5c-5839e3adb2bb">
+
+The dataset is available to download [here](.).
+
 
 ## Playground
 
@@ -66,11 +71,11 @@ Finally, it should include a link to the notebook.
 
 We show key results in this section. Please refer to the paper for more details.
 
-<img width="778" alt="image" src="https://github.com/user-attachments/assets/34b0ea66-5ee7-4338-bf04-f0b20f87d0de">
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/34b0ea66-5ee7-4338-bf04-f0b20f87d0de">
 
-<img width="778" alt="image" src="https://github.com/user-attachments/assets/7193001b-1485-42b5-aa25-feab777e9921">
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/7193001b-1485-42b5-aa25-feab777e9921">
 
-<img width="778" alt="image" src="https://github.com/user-attachments/assets/9cf2a960-af8b-4df3-b714-6755b5bb90f6">
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/9cf2a960-af8b-4df3-b714-6755b5bb90f6">
 
 
 <!-- Add a citation -->
