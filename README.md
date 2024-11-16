@@ -64,7 +64,14 @@ Finally, it should include a link to the notebook.
 
 ## Results
 
-This should include quantitative and some qualitative results to show what the method can do.
+We show key results in this section. Please refer to the paper for more details.
+
+<img width="778" alt="image" src="https://github.com/user-attachments/assets/34b0ea66-5ee7-4338-bf04-f0b20f87d0de">
+
+<img width="778" alt="image" src="https://github.com/user-attachments/assets/7193001b-1485-42b5-aa25-feab777e9921">
+
+<img width="778" alt="image" src="https://github.com/user-attachments/assets/9cf2a960-af8b-4df3-b714-6755b5bb90f6">
+
 
 <!-- Add a citation -->
 ## Citation
