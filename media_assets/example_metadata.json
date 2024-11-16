@@ -1,0 +1,29 @@
+{
+    "video_id": "VID_20240116_230040",
+    "start_time": 2.057,
+    "end_time": 16.71059,
+    "setting": "ws-kitchen",
+    "bg-noise": "no",
+    "water_temperature": "normal",
+    "liquid": "water_normal",
+    "container_id": "container_1",
+    "flow_rate_appx": "constant",
+    "comment": null,
+    "clean": "yes",
+    "time_annotation_mode": "manual",
+    "shape": "cylindrical",
+    "material": "plastic",
+    "visibility": "transparent",
+    "example_video_id": "VID_20240116_230040",
+    "measurements": {
+        "diameter_bottom": 5.7,
+        "diameter_top": 6.3,
+        "net_height": 19.7,
+        "thickness": 0.32
+    },
+    "hyperparameters": {
+        "beta": 0.0
+    },
+    "physical_parameters": null,
+    "item_id": "VID_20240116_230040_2.1_16.7"
+}

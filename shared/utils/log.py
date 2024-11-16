@@ -62,5 +62,11 @@ def json_print(data, indent=4):
     print(json.dumps(data, indent=indent))
 
 
+def get_terminal_width():
+    import shutil
+    return shutil.get_terminal_size().columns
+
+
 if __name__ == "__main__":
     print("Repo path:", repo_path)
+    

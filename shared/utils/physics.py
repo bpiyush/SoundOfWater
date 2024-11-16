@@ -292,3 +292,50 @@ def wavelength_to_frequency(l):
         l (float): wavelength
     """
     return C / l
+
+
+def get_cylinder_radius(m):
+    return 0.25 * (m['diameter_top'] + m['diameter_bottom'])
+
+
+def get_cylinder_height(m):
+    return m['net_height']
+
+
+def get_flow_rate(m, duration):
+    r = get_cylinder_radius(m)
+    h = get_cylinder_height(m)
+    volume = np.pi * (r**2) * h
+    q = volume / duration
+    return q
+
+
+def get_length_of_air_column(m, duration, timestamps):
+    h = get_cylinder_height(m)
+    l = (-h/duration) * timestamps + h
+    l = torch.from_numpy(l)
+    return l
+
+
+def estimate_cylinder_radius(wavelengths, timestamps=None, beta=0.62):
+    radius_pred = ((1. / beta) * (wavelengths[-1] / 4.)).item()
+    return radius_pred
+
+
+def estimate_cylinder_height(wavelengths, timestamps=None, beta=0.62):
+    height_pred = wavelengths[0] / 4. - wavelengths[-1] / 4.
+    return height_pred.item()
+
+
+def estimate_flow_rate(wavelengths, timestamps=None, output_fps=49.):
+    radius = estimate_cylinder_radius(wavelengths)
+    l_pred = (wavelengths - wavelengths[-1]) / 4.
+    slope = np.gradient(l_pred).mean() * output_fps
+    Q_pred = -np.pi * (radius**2) * slope
+    return Q_pred
+
+
+def estimate_length_of_air_column(wavelengths, timestamps=None):
+    l_pred = (wavelengths - wavelengths[-1]) / 4.
+    return l_pred
+
