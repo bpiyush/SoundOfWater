@@ -224,11 +224,22 @@ def configure_outputs():
     return [image_wide, dataframe, markdown, image_tsne]
 
 
+# Configure pre-defined examples
+examples = [
+    ["../media_assets/example_video.mp4", None, None],
+    ["../media_assets/ayNzH0uygFw_9.0_21.0.mp4", None, None],
+    ["../media_assets/biDn0Gi6V8U_7.0_15.0.mp4", None, None],
+    ["../media_assets/goWgiQQMugA_2.5_9.0.mp4", None, None],
+    ["../media_assets/K87g4RvO-9k_254.0_259.0.mp4", None, None],
+]
+
+
 # Define Gradio interface
 with gr.Blocks(
     css=custom_css,
     theme=gr.themes.Default(),
 ) as demo:
+
     # Add the header
     gr.HTML(header)
     
@@ -236,6 +247,7 @@ with gr.Blocks(
         fn=process_input,
         inputs=configure_input(),
         outputs=configure_outputs(),
+        examples=examples,
     )
         
     # Add the footer
