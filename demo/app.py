@@ -113,6 +113,11 @@ Tips to get better results:
 </div>
 """
 
+def greet(name, is_morning, temperature):
+    salutation = "Good morning" if is_morning else "Good evening"
+    greeting = f"{salutation} {name}. It is {temperature} degrees today"
+    celsius = (temperature - 32) * 5 / 9
+    return greeting, round(celsius, 2)
 
 
 # Define Gradio interface
@@ -126,19 +131,12 @@ with gr.Blocks(
     # Add the header
     gr.HTML(header)
 
-    with gr.Row():
-        with gr.Column():
-            # Take as input a video
-            video_input = gr.Video(
-                label="Upload Video", height=400, visible=True,
-            )
+    gr.Interface(
+        fn=greet,
+        inputs=["text", "checkbox", gr.Slider(0, 100)],
+        outputs=["text", "number"],
+    )
         
-        with gr.Column():
-            # Display the video
-            image_output = gr.Image(
-                label="Estimated pitch", height=400, visible=True,
-            )
-    
     # Add the footer
     gr.HTML(footer)
 
