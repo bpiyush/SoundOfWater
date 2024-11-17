@@ -10,7 +10,7 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://your_gradio_demo_link" target="_blank">
+  <a href="https://huggingface.co/spaces/bpiyush/SoundOfWater" target="_blank">
     <img src="https://img.shields.io/badge/Gradio-Demo-orange" alt="Gradio">
   </a>
   &nbsp;&nbsp;&nbsp;
@@ -162,6 +162,8 @@ pip install ipywidgets jupyterlab seaborn
 ```
 
 Remember to download the model in the previous step. Then, run the notebook.
+
+You can checkout the demo [here](https://huggingface.co/spaces/bpiyush/SoundOfWater).
 
 ## 📊 Results
 
