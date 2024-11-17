@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .image {
+            margin-right: 20px;
+        }
+        .content {
+            text-align: center;
+        }
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .authors {
+            color: #4a90e2;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .affiliations {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button {
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- <div class="image">
+            <img src="./media_assets/pouring-water-logo5.png" alt="logo" width="100">
+        </div> -->
+        <div class="content">
+            <div class="title">🚰 The Sound of Water</div>
+            <div class="subtitle" style="font-size: larger;">Inferring Physical Properties from Pouring Liquids</div>
+            <div class="authors">
+                Piyush Bagad<sup>1</sup>, Makarand Tapaswi<sup>2</sup>, Cees G. M. Snoek<sup>3</sup>, Andrew Zisserman<sup>1</sup>
+            </div>
+            <div class="affiliations">
+                <sup>1</sup>University of Oxford, <sup>2</sup>IIIT Hyderabad, <sup>3</sup>University of Amsterdam
+            </div>
+            <div class="buttons">
+                <a href="#" class="button">arXiv</a>
+                <a href="#" class="button">Code</a>
+                <a href="#" class="button">Data</a>
+                <a href="#" class="button">Demo</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
