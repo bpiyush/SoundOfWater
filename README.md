@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <a href="https://arxiv.org/abs/XXXXXX" target="_blank">
+  <a href="https://arxiv.org/abs/2411.11222" target="_blank">
     <img src="https://img.shields.io/badge/arXiv-Paper-red" alt="arXiv">
   </a>
   &nbsp;&nbsp;&nbsp;
