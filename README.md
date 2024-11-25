@@ -1,5 +1,6 @@
 # <img src="./media_assets/pouring-water-logo5.png" alt="Logo" width="40">  The Sound of Water: Inferring Physical Properties from Pouring Liquids
 
+[Piyush Bagad](https://bpiyush.github.io/), [Makarand Tapaswi](https://makarandtapaswi.github.io/), [Cees G. M. Snoek](https://www.ceessnoek.info/), [Andrew Zisserman](https://www.robots.ox.ac.uk/~az/)
 
 <p align="center">
   <a href="https://arxiv.org/abs/2411.11222" target="_blank">
