@@ -186,7 +186,7 @@ If you find this repository useful, please consider giving a star ⭐ and citati
 
 ```bibtex
 @article{sound_of_water_bagad,
-  title={The Sound of Water: Inferring Physical Properties from Pouring Liquids},
+  title={The {S}ound of {W}ater: {I}nferring {P}hysical {P}roperties from {P}ouring {L}iquids},
   author={Bagad, Piyush and Tapaswi, Makarand and Snoek, Cees G. M. and Zisserman, Andrew},
   journal={arXiv},
   year={2024}
