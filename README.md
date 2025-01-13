@@ -191,6 +191,14 @@ If you find this repository useful, please consider giving a star ⭐ and citati
   journal={arXiv},
   year={2024}
 }
+
+@inproceedings{
+      bagad2024soundofwater,
+      title={The {S}ound of {W}ater: {I}nferring {P}hysical {P}roperties from {P}ouring {L}iquids},
+      author={Bagad, Piyush and Tapaswi, Makarand and Snoek, Cees G. M. and Zisserman, Andrew},
+      booktitle={ICASSP},
+      year={2025}
+}
 ```
 
 <!-- Add acknowledgements, license, etc. here. -->
